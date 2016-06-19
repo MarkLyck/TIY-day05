@@ -1,0 +1,612 @@
+@font-face {
+  font-family: 'Oswald', sans-serif;
+}
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2C7EBB;
+}
+
+button {
+  padding: 0;
+}
+
+.noOutline {
+  outline: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: linear-gradient(
+      rgba(15, 84, 156, 0.8),
+      rgba(15, 84, 156, 0.8)
+    ), url("images/waves.jpg") no-repeat center center fixed;
+
+  /*no-repeat center center fixed*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 573px;
+}
+
+header .main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 135px;
+  font-size: 20px;
+}
+
+.main-nav a {
+  color: #083451;
+}
+
+.main-nav > a {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  text-transform: uppercase;
+  letter-spacing: -1.6px;
+}
+
+header .menu {
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+header .menu li {
+  display: flex;
+  align-items: center;
+  margin-left: 17px;
+}
+
+header .menu li > a {
+  display: flex;
+  letter-spacing: -0.5px;
+}
+
+header .menu i {
+  align-self: center;
+  font-size: 17px;
+  margin-left: 8px;
+}
+
+header span.fa-stack.fa-lg {
+  font-size: 29px;
+  margin-right: 10px;
+}
+
+header .menu {
+  display: flex;
+  margin-right: 49px;
+}
+
+header > h1 {
+  align-self: center;
+  margin-top: 162px;
+  font-size: 8vw;
+  letter-spacing: -5px;
+  text-transform: uppercase;
+  line-height: 115px;
+}
+
+header > h4 {
+  align-self: center;
+  letter-spacing: 0.3px;
+  color: #083656;
+}
+
+main {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1070px;
+  padding: 69px 0;
+}
+
+.blogPost {
+  max-width: 89%;
+}
+
+.blogPost > h2 {
+  font-size: 73px;
+  font-family: 'Oswald', sans-serif;
+  color: #083452;
+  text-transform: uppercase;
+  line-height: 77px;
+}
+
+.blogPost .meta {
+  display: flex;
+  align-items: center;
+  margin: 6px 5px 38px 5px;
+}
+
+.blogPost .meta > img {
+  width: 24px;
+  height: 24px;
+  border: 0;
+  border-radius: 50%;
+}
+
+.blogPost .meta .authorName {
+  margin-top: 3px;
+}
+
+.blogPost .meta .authorName {
+  color: #2073B5;
+  letter-spacing: -1.3px;
+  margin-left: 9px;
+}
+
+.blogPost .meta > p:last-child {
+  margin: 5px 0 0 17px;
+  letter-spacing: -0.9px;
+}
+
+.blogPost .date {
+  color: #A6B5C1;
+  text-decoration: underline;
+  /*line-height: 100px;*/
+  /*border-bottom: 1px solid #A6B5C1;*/
+}
+
+.blogPost > p {
+  font-size: 17px;
+  line-height: 28px;
+  margin-bottom: 29px;
+  color: #636D74;
+  letter-spacing: -0.075px;
+}
+
+.blogPost a {
+  text-decoration: underline;
+}
+
+.blogPost aside {
+  margin: -5px 0 31px 7px;
+  padding: 14px 50px 6px 19px;
+  border-left: 2px solid #D7D7D7;
+  color: #106DB3;
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: -1.4px;
+}
+
+.mobile-aside {
+  display: none;
+}
+
+.button-container {
+  display: flex;
+  margin: -6px 0 0 4px;
+}
+
+.blog-button {
+  display: flex;
+  align-items: center;
+  background: #A3B3BF;
+  border: 0;
+  color: #fff;
+  margin-right: 11px;
+}
+
+.blog-button > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #5E686F;
+  height: 32px;
+  width: 36px;
+}
+
+.blog-button > div > i {
+  font-size: 18px;
+}
+
+.blog-button > p {
+  padding: 0 13px;
+  letter-spacing: -0.9px;
+}
+
+.blog-button:nth-child(2) > p {
+  letter-spacing: -0.5px;
+  padding-right: 16px;
+}
+
+.blog-button:last-child {
+  background: #106DB3;
+}
+
+.blog-button:last-child > div {
+  background: #083452;
+}
+
+.blog-button:last-child > p {
+  letter-spacing: -0.8px;
+  padding-right: 18px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* TODO Why does this need to be such an outrageous pixel count to get it's proper width?
+     Is it relative to the image size? If so, why???
+  */
+  width: 2010px;
+}
+
+.blogger {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 22px;
+}
+
+
+.right .blogger img {
+  width: 91px;
+  /*height: 100px;*/
+  border: 0;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.right .blogger > h3 {
+  color: #106DB3;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+}
+
+.blogger .social-media-links > a {
+  color: #A4B4C0;
+  margin: 0 5px;
+  letter-spacing: -1px;
+}
+
+.right .ad {
+  width: 100%;
+  height: 329px;
+  background: linear-gradient(
+      rgba(15, 84, 156, 0.8),
+      rgba(15, 84, 156, 0.8)
+    ), url("images/ad.jpg") center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: 55px;
+  max-width: 100%;
+}
+
+.right .about-ad {
+  align-self: flex-end;
+  margin-top: 5px;
+  color: #A4B4C0;
+  text-decoration: underline;
+  letter-spacing: -0.7px;
+}
+
+.right .sidebar-heading {
+  margin-top: 48px;
+}
+
+.right .sidebar-heading > h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #106DB3;
+  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: -0.1px;
+  margin-bottom: 7px;
+}
+
+.right .sidebar-heading p {
+  color: #AFBDC8;
+  line-height: 25px;
+  letter-spacing: -0.6px;
+}
+
+.sidebar-heading p a {
+  color: #AFBDC8;
+  text-decoration: underline;
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #EAEEF0;
+  padding-top: 27px;
+  margin-top: 6px;
+}
+
+.bottomSection > h2 {
+  font-family: 'Oswald', sans-serif;
+  color: #083452;
+  font-size: 75px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+
+.imageSection {
+  margin-top: 31px;
+  display: flex;
+  width: 100%;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: flex-end;
+  width: 25%;
+  height: 362px;
+  background-color: blue;
+  text-transform: uppercase;
+  color: #083452;
+}
+
+.imageContainer h3 {
+  margin: 0 17px 13px 17px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 34px;
+  /*letter-spacing: 0.5px;*/
+  line-height: 39px;
+}
+
+.imageContainer:nth-child(1) {
+  background: linear-gradient(
+      rgba(15, 84, 156, 0.8),
+      rgba(15, 84, 156, 0.8)
+    ), url("images/post1.jpg") center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.imageContainer:nth-child(2) {
+  background: linear-gradient(
+      rgba(15, 84, 156, 0.4),
+      rgba(15, 84, 156, 0.4)
+    ),  url("images/post2.jpg") center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+}
+
+.imageContainer:nth-child(3) {
+  background: linear-gradient(
+      rgba(15, 84, 156, 0.8),
+      rgba(15, 84, 156, 0.8)
+    ), url("images/post3.jpg") center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.imageContainer:nth-child(4) {
+  background: linear-gradient(
+      rgba(15, 84, 156, 0.8),
+      rgba(15, 84, 156, 0.8)
+    ), url("images/post4.jpg") center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer {
+  background: #083452;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 12.5%;
+  letter-spacing: -0.6px;
+}
+
+footer .legal {
+  display: flex;
+  align-items: center;
+  color: #A2B2BE;
+}
+
+footer .legal img {
+  width: 53px;
+  margin-right: 10px;
+}
+
+footer > nav {
+
+}
+
+.footer-menu {
+  display: flex;
+}
+
+.footer-menu li {
+  border-left: 1px solid #A2B2BE;
+  padding: 0 9px;
+  letter-spacing: -0.8px;
+  /*margin-left: 10px;*/
+}
+
+.footer-menu li:first-child {
+  border: 0;
+  /*margin-left: 10px;*/
+}
+
+.footer-menu li:last-child {
+  border-left: 1px solid #A2B2BE;
+  padding: 0 4px 0 9px;
+  /*margin-left: 10px;*/
+}
+
+.footer-menu li a {
+  color: #A2B2BE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  header {
+    height: 218px;
+  }
+
+  .main-nav > a {
+    position: absolute;
+    top: 53px;
+    left: -11px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .main-nav a > p {
+    display: none;
+  }
+
+  header .menu {
+    /*margin: 8px 0 0 25px;*/
+    margin: 0 auto;
+  }
+
+  header > h1 {
+    margin-top: 70px;
+    letter-spacing: -1px;
+    line-height: 55px;
+  }
+
+  main {
+    flex-direction: column;
+    padding-top: 61px;
+  }
+  .blogPost > h2 {
+    line-height: 84px;
+    margin: 0 30px;
+  }
+  .blogPost .meta {
+    margin: 0 5px 38px 17px;
+  }
+
+  .blogPost .meta > img, .authorName, .mobile-hide {
+    display: none;
+  }
+
+  .blogPost > p {
+    margin: 0 30px 29px 30px;
+  }
+
+  .blogPost > p:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .blogPost > aside {
+    display: none;
+  }
+
+  .blogPost > .mobile-aside {
+    display: block;
+    margin-left: 32px;
+  }
+
+  .button-container {
+    margin-left: 30px;
+  }
+
+  .blog-button:last-child {
+    order: -1;
+  }
+  .blog-button > div {
+    width: 55px;
+    height: 50px;
+  }
+
+  .blog-button > p {
+    display: none;
+  }
+  .right {
+    margin-top: 100px;
+    width: 100%;
+  }
+  .right .blogger img {
+    width: 140px;
+  }
+  .blogger > h3 {
+    font-size: 25px;
+  }
+  .blogger .social-media-links {
+    font-size: 22px;
+  }
+  .right .ad {
+    width: 87%;
+  }
+  .right .about-ad {
+    margin-right: 7%;
+  }
+  .sidebar-heading {
+    display: none;
+  }
+  .bottomSection > h2 {
+    font-size: 10vw;
+  }
+  .imageSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imageContainer {
+    width: 87%;
+    height: 330px;
+    margin-bottom: 30px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer > nav {
+    order: -1;
+    margin-bottom: 30px;
+  }
+  .footer-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .legal {
+    flex-direction: column;
+    text-align: center;
+  }
+}
