@@ -1,5 +1,7 @@
 ## Day 5 Project - SURF & PADDLE CO.
 
+I uploaded a live version to surge.sh, However surge doesn't always upload the images correctly, so there are 2 missing images in this project.
+
 LIVE website: [mlyck-day05.surge.sh](https://mlyck-day05.surge.sh)
 
 We were tasked to recreate a pixel perfect website from an image
