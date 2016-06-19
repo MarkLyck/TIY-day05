@@ -323,7 +323,7 @@ main {
   background: linear-gradient(
       rgba(15, 84, 156, 0.4),
       rgba(15, 84, 156, 0.4)
-    ), url("images/ad.jpg") center;
+    ), url("images/ad-image.jpg") center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
